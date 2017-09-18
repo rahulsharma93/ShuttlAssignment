@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/parent_relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="#90000000"
+            android:text="asdsad"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_below="@+id/title_text_view"
+            android:layout_width="match_parent"
+            android:layout_alignLeft="@+id/title_text_view"
+            android:layout_alignStart="@+id/title_text_view"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/like_button"
+            android:layout_below="@+id/linear"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/grey_round_bg"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="11sp"
+            android:text="LIKE" />
+
+        <TextView
+            android:id="@+id/from_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/like_button"
+            android:layout_toEndOf="@+id/like_button"
+            android:layout_alignTop="@+id/like_button"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#90000000"
+            android:textSize="14sp"
+            android:text="adsa"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
