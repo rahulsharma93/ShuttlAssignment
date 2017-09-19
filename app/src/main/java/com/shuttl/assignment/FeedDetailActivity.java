@@ -52,7 +52,7 @@ public class FeedDetailActivity extends AppCompatActivity implements View.OnClic
             Date date = new Date(feedModel.getTime());
             dateTextView.setText(DateUtils.formatDate(date));
             Picasso.with(this).load(feedModel.getImageUrl())
-                    .transform(new RoundedCornersTransformation(10,10)).into(profileImageView);
+                    .transform(new RoundedCornersTransformation(20,20)).into(profileImageView);
             sampleText.setText(feedModel.getText());
             fromTextView.setText("From " + feedModel.getName());
             descriptionTextView.setText(feedModel.getDescription());

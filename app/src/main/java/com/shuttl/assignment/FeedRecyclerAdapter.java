@@ -71,7 +71,7 @@ public class FeedRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
                 holder.fromTextView.setText("From " + feedItem.getFeed().getName());
                 holder.text.setText(feedItem.getFeed().getText());
                 Picasso.with(context).load(feedItem.getFeed().getImageUrl())
-                        .transform(new RoundedCornersTransformation(10,10)).into(holder.image);
+                        .transform(new RoundedCornersTransformation(20,20)).into(holder.image);
 
                 if (feedItem.getFeed().getText()==null){
                     holder.text.setVisibility(View.GONE);
